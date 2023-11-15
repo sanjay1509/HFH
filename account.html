@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Account</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fontawesome.com/icons/star?f=classic&s=solid">
+</head>
+<body>
+
+    
+        
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <!-- <img src="/images/.jpg" width="125px"> -->
+                    <h1>HFH</h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="product.html">Product</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="account.html">Account</a></li>
+                    </ul>
+                </nav>
+                 <a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+                
+            </div>
+
+           
+        </div>
+   <!-- ------------account--------------- -->
+
+   <div class="account-page">
+    <div class="container">
+        <div class="row">
+            <div class="col-2">
+                <img src="images/img1.png" alt="">
+            </div>
+
+            <div class="col-2">
+                <div class="wrapper">
+              
+                    <div class="form-box-login">
+                        <h2>Login</h2>
+                        <form action="/login" method="post">
+                         <div class="input-box">
+                         <span class="icon"><ion-icon name="person"></ion-icon></span>
+                         <input type="text" name="username" required>
+                         <label style="left: -35px;">Username</label>
+                     </div>
+                            <div class="input-box">
+                                <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                                <input type="password" name="password" required>
+                                <label class="pass" style="left: -30px;">Password</label>
+                            </div>
+                           
+                            <button type="submit" class="btn btn-outline-dark">Login</button>
+                            <div class="login-register">
+                                <p>Don't have an account <a href="#" class="register-link">Register</a></p>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="form-box-register">
+                      <h2>Register</h2>
+                      <form action="/register" method="post">
+                         <div class="input-box">
+                            <span class="icon"><ion-icon name="person"></ion-icon></span>
+                            <input type="text" name="username" required>
+                            <label style="left: -35px;">Username</label>
+                        </div>
+                          <div class="input-box">
+                              <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                              <input type="email" name="email" required>
+                              <label>Email</label>
+                          </div>
+                          <div class="input-box">
+                              <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                              <input type="password" name="password" required>
+                              <label class="pass" style="left: -30px;">Password</label>
+                          </div>
+                          
+                          <button type="submit" class="btn btn-outline-dark">Register</button>
+                          <div class="login-register">
+                              <p>Already have an account <a href="#" class="login-link">Login</a></p>
+                          </div>
+                      </form>
+                  </div>
+                </div>
+                <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+                <script>
+                   const wrapper  = document.querySelector('.wrapper');
+                   const loginLink  = document.querySelector('.login-link');
+                   const registerLink  = document.querySelector('.register-link');
+                   
+                   registerLink.addEventListener('click', ()=> {
+                      wrapper.classList.add('active');
+                   });
+                   loginLink.addEventListener('click', ()=> {
+                      wrapper.classList.remove('active');
+                   });
+                   
+                </script>
+            </div>
+        </div>
+    </div>
+   </div>
+        
+    <!-- ------------footer--------------- -->
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Visit Our Page</h3>
+                    <p>You may visit our page on Android,ios and Desktop.</p>
+                </div>
+                <div class="footer-col-2">
+                    <img src="" alt="">
+                    <p>Our Purpose Is To Sustainably Make the Pleasure and Benift of Homemade Products Accessible to the Market</p>
+                </div>
+                <div class="row2">
+                    <div class="footer-col-3">
+                        <h3>Useful Links</h3>
+                        <ul>
+                            <li>Coupons</li>
+                            <li>Blog Post</li>
+                            <li>Return Policy</li>
+                            <li>Join Ad</li>
+                        </ul>
+                    </div>
+                    <div class="footer-col-4">
+                        <h3>Follow us</h3>
+                        <ul>
+                            <li>Facebook</li>
+                            <li>Twitter</li>
+                            <li>Instagram</li>
+                            <li>Youtube</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+</html>
